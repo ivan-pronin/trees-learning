@@ -1,0 +1,16 @@
+import com.ivan.pronin.learning.trees.TreeFactory;
+import org.junit.jupiter.api.Test;
+
+/**
+ * @author Ivan Pronin
+ * @since 26.08.2025
+ */
+public class Sample {
+
+    @Test
+    public void test() {
+        var tree = TreeFactory.createSampleTree();
+        System.out.println(tree);
+    }
+
+}
