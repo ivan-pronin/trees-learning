@@ -15,10 +15,10 @@ The goal of this project is to:
 ## 📚 Topics & Task List
 
 ### 1. Tree Traversals (Basics)
-- [ ] Pre-order traversal (recursive & iterative).
-- [ ] In-order traversal (recursive & iterative).
-- [ ] Post-order traversal (recursive & iterative).
-- [ ] Level-order (BFS) traversal.
+- [✅] Pre-order traversal (recursive & iterative).
+- [✅] In-order traversal (recursive & iterative).
+- [✅] Post-order traversal (recursive & iterative).
+- [✅] Level-order (BFS) traversal.
 - [ ] Zig-zag / Spiral level-order traversal.
 - [ ] Serialize & Deserialize binary tree.
 
