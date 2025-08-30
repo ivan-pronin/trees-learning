@@ -14,26 +14,26 @@ class PreOrderTraversalTest {
 
     @Test
     public void testRecursiveTraversal() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         PreOrderTraversal.Recursive.traverse(root);
     }
 
     @Test
     public void testRecursiveTraversalList() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         var result = PreOrderTraversal.Recursive.getTraversalList(root);
         Assertions.assertEquals(List.of(4, 2, 1, 3, 6, 5, 7), result);
     }
 
     @Test
     public void testIterativeTraversal() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         PreOrderTraversal.Iterative.traverse(root);
     }
 
     @Test
     public void testIterativeTraversalList() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         var result = PreOrderTraversal.Iterative.getTraversalList(root);
         Assertions.assertEquals(List.of(4, 2, 1, 3, 6, 5, 7), result);
     }

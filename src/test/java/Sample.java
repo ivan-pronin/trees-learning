@@ -9,7 +9,7 @@ public class Sample {
 
     @Test
     public void test() {
-        var tree = TreeFactory.createSampleTree();
+        var tree = TreeFactory.createSampleBST();
         System.out.println(tree);
     }
 

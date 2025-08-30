@@ -19,7 +19,7 @@ The goal of this project is to:
 - [✅] In-order traversal (recursive & iterative).
 - [✅] Post-order traversal (recursive & iterative).
 - [✅] Level-order (BFS) traversal.
-- [ ] Zig-zag / Spiral level-order traversal.
+- [✅] Zig-zag / Spiral level-order traversal.
 - [ ] Serialize & Deserialize binary tree.
 
 ### 2. Binary Search Tree (BST) Operations

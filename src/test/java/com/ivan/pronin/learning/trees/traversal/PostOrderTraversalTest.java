@@ -14,14 +14,14 @@ class PostOrderTraversalTest {
 
     @Test
     public void testRecursiveTraversal() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         // PostOrder: 1, 3, 2, 5, 7, 6, 4
         PostOrderTraversal.Recursive.traverse(root);
     }
 
     @Test
     public void testRecursiveTraversalList() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         var result = PostOrderTraversal.Recursive.getTraversalList(root);
         Assertions.assertEquals(List.of(1, 3, 2, 5, 7, 6, 4), result);
     }
@@ -36,20 +36,20 @@ class PostOrderTraversalTest {
      */
     @Test
     public void testIterativeTraversal() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         PostOrderTraversal.Iterative.traverse(root);
     }
 
     @Test
     public void testIterativeTraversalListTwoStacks() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         var result = PostOrderTraversal.Iterative.getTraversalListTwoStacks(root);
         Assertions.assertEquals(List.of(1, 3, 2, 5, 7, 6, 4), result);
     }
 
     @Test
     public void testIterativeTraversalListReverseTrick() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         var result = PostOrderTraversal.Iterative.getTraversalListReverseTrick(root);
         Assertions.assertEquals(List.of(1, 3, 2, 5, 7, 6, 4), result);
     }

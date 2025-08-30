@@ -15,13 +15,13 @@ class LevelOrderTraversalTest {
     // 4, 2, 6, 1, 3, 5, 7
     @Test
     public void testIterativeTraversal() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         LevelOrderTraversal.Iterative.traverse(root);
     }
 
     @Test
     public void testIterativeTraversalList() {
-        var root = TreeFactory.createSampleTree();
+        var root = TreeFactory.createSampleBST();
         var result = LevelOrderTraversal.Iterative.getTraversalList(root);
         Assertions.assertEquals(List.of(4, 2, 6, 1, 3, 5, 7), result);
     }
