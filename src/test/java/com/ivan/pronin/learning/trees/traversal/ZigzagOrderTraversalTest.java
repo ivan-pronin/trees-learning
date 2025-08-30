@@ -5,7 +5,7 @@ import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static com.ivan.pronin.learning.trees.TreeFactory.createSampleZigZagTree;
+import static com.ivan.pronin.learning.trees.util.TreeFactory.createSampleZigZagTree;
 
 /**
  * @author Ivan Pronin
@@ -33,7 +33,7 @@ class ZigzagOrderTraversalTest {
     void getTraversalList() {
         var root = createSampleZigZagTree();
         var actual = ZigzagOrderTraversal.getTraversalList(root);
-        Assertions.assertEquals(List.of(List.of(1), List.of(3,2), List.of(4,5,6)), actual);
+        Assertions.assertEquals(List.of(List.of(1), List.of(3, 2), List.of(4, 5, 6)), actual);
     }
 
 }

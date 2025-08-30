@@ -2,7 +2,7 @@ package com.ivan.pronin.learning.trees.traversal;
 
 import java.util.List;
 
-import com.ivan.pronin.learning.trees.TreeFactory;
+import com.ivan.pronin.learning.trees.util.TreeFactory;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

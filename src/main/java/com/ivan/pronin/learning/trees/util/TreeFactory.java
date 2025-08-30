@@ -1,4 +1,4 @@
-package com.ivan.pronin.learning.trees;
+package com.ivan.pronin.learning.trees.util;
 
 import com.ivan.pronin.learning.trees.model.TreeNode;
 import lombok.experimental.UtilityClass;

@@ -38,9 +38,9 @@ public class LevelOrderTraversal {
             queue.offer(root);
             while (!queue.isEmpty()) {
                 var current = queue.poll();
-                System.out.print(current.value() + "->");
-                if (current.left() != null) queue.offer(current.left());
-                if (current.right() != null) queue.offer(current.right());
+                System.out.print(current.getValue() + "->");
+                if (current.getLeft() != null) queue.offer(current.getLeft());
+                if (current.getRight() != null) queue.offer(current.getRight());
             }
         }
 
@@ -51,9 +51,9 @@ public class LevelOrderTraversal {
             List<T> result = new ArrayList<>();
             while (!queue.isEmpty()) {
                 var current = queue.poll();
-                result.add(current.value());
-                if (current.left() != null) queue.offer(current.left());
-                if (current.right() != null) queue.offer(current.right());
+                result.add(current.getValue());
+                if (current.getLeft() != null) queue.offer(current.getLeft());
+                if (current.getRight() != null) queue.offer(current.getRight());
             }
             return result;
         }

@@ -32,9 +32,9 @@ public class PreOrderTraversal {
 
         public static <T> void traverse(TreeNode<T> root) {
             if (root == null) return;
-            System.out.print(root.value() + "->");
-            traverse(root.left());
-            traverse(root.right());
+            System.out.print(root.getValue() + "->");
+            traverse(root.getLeft());
+            traverse(root.getRight());
         }
 
         public static <T> List<T> getTraversalList(TreeNode<T> root) {
@@ -43,9 +43,9 @@ public class PreOrderTraversal {
 
         private static <T> List<T> getTraversalList(TreeNode<T> root, List<T> result) {
             if (root == null) return List.of();
-            result.add(root.value());
-            getTraversalList(root.left(), result);
-            getTraversalList(root.right(), result);
+            result.add(root.getValue());
+            getTraversalList(root.getLeft(), result);
+            getTraversalList(root.getRight(), result);
             return result;
         }
 
@@ -59,9 +59,9 @@ public class PreOrderTraversal {
             stack.push(root);
             while (!stack.isEmpty()) {
                 var current = stack.pop();
-                System.out.print(current.value() + "->");
-                if (current.right() != null) stack.push(current.right());
-                if (current.left() != null) stack.push(current.left());
+                System.out.print(current.getValue() + "->");
+                if (current.getRight() != null) stack.push(current.getRight());
+                if (current.getLeft() != null) stack.push(current.getLeft());
             }
         }
 
@@ -72,9 +72,9 @@ public class PreOrderTraversal {
             stack.push(root);
             while (!stack.isEmpty()) {
                 var current = stack.pop();
-                result.add(current.value());
-                if (current.right() != null) stack.push(current.right());
-                if (current.left() != null) stack.push(current.left());
+                result.add(current.getValue());
+                if (current.getRight() != null) stack.push(current.getRight());
+                if (current.getLeft() != null) stack.push(current.getLeft());
             }
             return result;
         }

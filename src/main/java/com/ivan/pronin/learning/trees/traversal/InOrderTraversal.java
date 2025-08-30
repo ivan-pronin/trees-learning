@@ -33,9 +33,9 @@ public class InOrderTraversal {
 
         public static <T> void traverse(TreeNode<T> root) {
             if (root == null) return;
-            traverse(root.left());
-            System.out.print(root.value() + "->");
-            traverse(root.right());
+            traverse(root.getLeft());
+            System.out.print(root.getValue() + "->");
+            traverse(root.getRight());
         }
 
         public static <T> List<T> getTraversalList(TreeNode<T> root) {
@@ -44,9 +44,9 @@ public class InOrderTraversal {
 
         private static <T> List<T> getTraversalList(TreeNode<T> root, List<T> result) {
             if (null == root) return List.of();
-            getTraversalList(root.left(), result);
-            result.add(root.value());
-            getTraversalList(root.right(), result);
+            getTraversalList(root.getLeft(), result);
+            result.add(root.getValue());
+            getTraversalList(root.getRight(), result);
             return result;
         }
 
@@ -61,11 +61,11 @@ public class InOrderTraversal {
             while (!stack.isEmpty() || current != null) {
                 while (current != null){
                     stack.push(current);
-                    current = current.left();
+                    current = current.getLeft();
                 }
                 current = stack.pop();
-                System.out.print(current.value() + "->");
-                current = current.right();
+                System.out.print(current.getValue() + "->");
+                current = current.getRight();
             }
         }
 
@@ -77,11 +77,11 @@ public class InOrderTraversal {
             while (!stack.isEmpty() || current != null) {
                 while (current != null){
                     stack.push(current);
-                    current = current.left();
+                    current = current.getLeft();
                 }
                 current = stack.pop();
-                result.add(current.value());
-                current = current.right();
+                result.add(current.getValue());
+                current = current.getRight();
             }
             return result;
         }

@@ -1,4 +1,4 @@
-import com.ivan.pronin.learning.trees.TreeFactory;
+import com.ivan.pronin.learning.trees.util.TreeFactory;
 import org.junit.jupiter.api.Test;
 
 /**

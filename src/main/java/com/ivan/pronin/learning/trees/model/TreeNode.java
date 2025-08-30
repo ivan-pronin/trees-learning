@@ -1,12 +1,24 @@
 package com.ivan.pronin.learning.trees.model;
 
+import lombok.Data;
+
 /**
  * @author Ivan Pronin
  * @since 26.08.2025
  */
-public record TreeNode<T>(
-    T value,
-    TreeNode<T> left,
-    TreeNode<T> right) {
+@Data
+public class TreeNode<T> {
+
+    T value;
+
+    TreeNode<T> left;
+
+    TreeNode<T> right;
+
+    public TreeNode(T value, TreeNode<T> left, TreeNode<T> right) {
+        this.value = value;
+        this.left = left;
+        this.right = right;
+    }
 
 }

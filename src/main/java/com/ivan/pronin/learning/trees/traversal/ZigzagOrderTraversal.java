@@ -39,15 +39,15 @@ public class ZigzagOrderTraversal {
         while (!nodesLeftToRight.isEmpty()) {
             while (!nodesLeftToRight.isEmpty()) {
                 var current = nodesLeftToRight.pop();
-                System.out.print(current.value() + "->");
-                if (current.left() != null) nodesRightToLeft.push(current.left());
-                if (current.right() != null) nodesRightToLeft.push(current.right());
+                System.out.print(current.getValue() + "->");
+                if (current.getLeft() != null) nodesRightToLeft.push(current.getLeft());
+                if (current.getRight() != null) nodesRightToLeft.push(current.getRight());
             }
             while (!nodesRightToLeft.isEmpty()) {
                 var current = nodesRightToLeft.pop();
-                System.out.print(current.value() + "->");
-                if (current.right() != null) nodesLeftToRight.push(current.right());
-                if (current.left() != null) nodesLeftToRight.push(current.left());
+                System.out.print(current.getValue() + "->");
+                if (current.getRight() != null) nodesLeftToRight.push(current.getRight());
+                if (current.getLeft() != null) nodesLeftToRight.push(current.getLeft());
             }
         }
     }
@@ -65,17 +65,17 @@ public class ZigzagOrderTraversal {
             List<T> lvlList = new ArrayList<>();
             while (!nodesLeftToRight.isEmpty()) {
                 var current = nodesLeftToRight.pop();
-                lvlList.add(current.value());
-                if (current.left() != null) nodesRightToLeft.push(current.left());
-                if (current.right() != null) nodesRightToLeft.push(current.right());
+                lvlList.add(current.getValue());
+                if (current.getLeft() != null) nodesRightToLeft.push(current.getLeft());
+                if (current.getRight() != null) nodesRightToLeft.push(current.getRight());
             }
             if (!lvlList.isEmpty()) result.add(lvlList);
             lvlList = new ArrayList<>();
             while (!nodesRightToLeft.isEmpty()) {
                 var current = nodesRightToLeft.pop();
-                lvlList.add(current.value());
-                if (current.right() != null) nodesLeftToRight.push(current.right());
-                if (current.left() != null) nodesLeftToRight.push(current.left());
+                lvlList.add(current.getValue());
+                if (current.getRight() != null) nodesLeftToRight.push(current.getRight());
+                if (current.getLeft() != null) nodesLeftToRight.push(current.getLeft());
             }
             if (!lvlList.isEmpty()) result.add(lvlList);
         }
