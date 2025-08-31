@@ -67,4 +67,27 @@ public class TreeFactory {
         return new TreeNode<>(10, node20, node5);
     }
 
+    /*
+     * Example tree:
+     *       6
+     *     /   \
+     *    2     8
+     *   / \   / \
+     *  0   4 7   9
+     *     / \
+     *    3   5
+     */
+    public static TreeNode<Integer> buildSampleBST4Levels() {
+        TreeNode<Integer> root = new TreeNode<>(6);
+        root.setLeft(new TreeNode<>(2));
+        root.setRight(new TreeNode<>(8));
+        root.getLeft().setLeft(new TreeNode<>(0));
+        root.getLeft().setRight(new TreeNode<>(4));
+        root.getLeft().getRight().setLeft(new TreeNode<>(3));
+        root.getLeft().getRight().setRight(new TreeNode<>(5));
+        root.getRight().setLeft(new TreeNode<>(7));
+        root.getRight().setRight(new TreeNode<>(9));
+        return root;
+    }
+
 }

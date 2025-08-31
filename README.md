@@ -27,7 +27,7 @@ The goal of this project is to:
 - [ ] Search in a BST.
 - [ ] Delete a node from a BST.
 - [✅] Validate BST.
-- [ ] Lowest Common Ancestor (LCA) in a BST.
+- [✅] Lowest Common Ancestor (LCA) in a BST.
 - [ ] Kth smallest / largest element in a BST.
 - [ ] Convert sorted array to BST.
 
