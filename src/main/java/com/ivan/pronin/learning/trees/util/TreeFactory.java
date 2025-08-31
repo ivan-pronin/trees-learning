@@ -49,4 +49,22 @@ public class TreeFactory {
         return new TreeNode<>(1, node2, node3);
     }
 
+    /*
+     * Example tree:
+     *        10
+     *      /   \
+     *     20     5
+     *    /        \
+     *   22         8
+     */
+    public static TreeNode<Integer> createNonBstTree() {
+        var node22 = new TreeNode<>(22, null, null);
+        var node8 = new TreeNode<>(8, null, null);
+
+        var node20 = new TreeNode<>(20, node22, null);
+        var node5 = new TreeNode<>(5, null, node8);
+
+        return new TreeNode<>(10, node20, node5);
+    }
+
 }
