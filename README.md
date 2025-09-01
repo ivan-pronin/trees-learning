@@ -40,15 +40,15 @@ The goal of this project is to:
 - [ ] Merge K sorted lists (using heap).
 
 ### 4. General Binary Tree Problems
-- [ ] Maximum depth of binary tree.
+- [✅] Maximum depth of binary tree.
 - [ ] Diameter of binary tree.
-- [ ] Balanced binary tree check.
+- [✅] Balanced binary tree check.
 - [ ] Path sum problems (hasPathSum, all path sums).
 - [ ] Invert / Mirror a binary tree.
 - [ ] Subtree check (isSubtree).
 - [ ] Count good nodes in binary tree.
 - [ ] Find all nodes at distance K.
-- [ ] Delete nodes and return forest.
+- [✅] Delete nodes and return forest.
 - [ ] Construct binary tree from preorder & inorder traversal.
 
 ---
