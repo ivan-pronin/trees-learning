@@ -16,4 +16,10 @@ public class Trees {
         return first.getValue() == second.getValue() && equals(first.getLeft(), second.getLeft()) && equals(first.getRight(), second.getRight());
     }
 
+    public static <T> int getSize(TreeNode<T> root){
+        if (root == null) return 0;
+        return 1 + getSize(root.getLeft()) + getSize(root.getRight());
+    }
+
+
 }

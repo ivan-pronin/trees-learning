@@ -2,7 +2,7 @@ package com.ivan.pronin.learning.trees.bst;
 
 import org.junit.jupiter.api.Test;
 
-import static com.ivan.pronin.learning.trees.util.TreeFactory.buildSampleBST4Levels;
+import static com.ivan.pronin.learning.trees.util.TreeFactory.createSampleBST4Levels;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -13,7 +13,7 @@ class LowestCommonAncestorInBSTTest {
 
     @Test
     void testLCARecursiveCommon() {
-        var root = buildSampleBST4Levels();
+        var root = createSampleBST4Levels();
         var p = root.getLeft(); // 2
         var q = root.getRight(); // 8
         assertEquals(root, LowestCommonAncestorInBST.findLCARecursiveCommon(root, p, q));
@@ -25,7 +25,7 @@ class LowestCommonAncestorInBSTTest {
 
     @Test
     void testLCARecursiveBST() {
-        var root = buildSampleBST4Levels();
+        var root = createSampleBST4Levels();
         var p = root.getLeft(); // 2
         var q = root.getRight(); // 8
         assertEquals(root, LowestCommonAncestorInBST.findLCARecursiveBST(root, p, q));
@@ -37,7 +37,7 @@ class LowestCommonAncestorInBSTTest {
 
     @Test
     void testLCAIterativeCommon() {
-        var root = buildSampleBST4Levels();
+        var root = createSampleBST4Levels();
         var p = root.getLeft(); // 2
         var q = root.getRight(); // 8
         assertEquals(root, LowestCommonAncestorInBST.findLCAIterativeCommon(root, p, q));
@@ -50,7 +50,7 @@ class LowestCommonAncestorInBSTTest {
 
     @Test
     void testLCAIterativeBST() {
-        var root = buildSampleBST4Levels();
+        var root = createSampleBST4Levels();
         var p = root.getLeft(); // 2
         var q = root.getRight(); // 8
         assertEquals(root, LowestCommonAncestorInBST.findLCAIterativeBst(root, p, q));

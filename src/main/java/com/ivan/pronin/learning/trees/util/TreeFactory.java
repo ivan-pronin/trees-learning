@@ -77,7 +77,7 @@ public class TreeFactory {
      *     / \
      *    3   5
      */
-    public static TreeNode<Integer> buildSampleBST4Levels() {
+    public static TreeNode<Integer> createSampleBST4Levels() {
         TreeNode<Integer> root = new TreeNode<>(6);
         root.setLeft(new TreeNode<>(2));
         root.setRight(new TreeNode<>(8));

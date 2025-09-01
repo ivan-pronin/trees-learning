@@ -4,6 +4,7 @@ import com.ivan.pronin.learning.trees.model.TreeNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 /**
@@ -54,5 +55,16 @@ class TreesTest {
         var root2 = new TreeNode<>(2, null, null);
         assertFalse(Trees.equals(root1, root2));
     }
+
+    @Test
+    void testGetSize() {
+        assertEquals(0, Trees.getSize(null));
+        assertEquals(1, Trees.getSize(new TreeNode<>(2, null, null)));
+        assertEquals(5, Trees.getSize(TreeFactory.createNonBstTree()));
+        assertEquals(6, Trees.getSize(TreeFactory.createSampleZigZagTree()));
+        assertEquals(7, Trees.getSize(TreeFactory.createSampleBST()));
+        assertEquals(9, Trees.getSize(TreeFactory.createSampleBST4Levels()));
+    }
+
 
 }
