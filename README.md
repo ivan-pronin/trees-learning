@@ -29,7 +29,7 @@ The goal of this project is to:
 - [✅] Validate BST.
 - [✅] Lowest Common Ancestor (LCA) in a BST.
 - [✅] Kth smallest / largest element in a BST.
-- [ ] Convert sorted array to BST.
+- [✅] Convert sorted array to BST.
 
 ### 3. Heaps / Priority Queue
 - [ ] Implement Min-Heap (heapify up/down).

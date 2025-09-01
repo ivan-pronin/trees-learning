@@ -66,5 +66,41 @@ class TreesTest {
         assertEquals(9, Trees.getSize(TreeFactory.createSampleBST4Levels()));
     }
 
+    @Test
+    void testGetBalancedHeight() {
+        assertEquals(0, Trees.getBalancedHeight(null));
+        assertEquals(1, Trees.getBalancedHeight(new TreeNode<>(2, null, null)));
+        assertEquals(3, Trees.getBalancedHeight(TreeFactory.createNonBstTree()));
+        assertEquals(4, Trees.getBalancedHeight(TreeFactory.createSampleBST4Levels()));
+    }
+
+    @Test
+    void testGetBalancedHeightForUnbalancedTree() {
+        var node3 = new TreeNode<>(3, null, null);
+        var node2 = new TreeNode<>(2, node3, null);
+        var node1 = new TreeNode<>(1, node2, null);
+        assertEquals(-1, Trees.getBalancedHeight(node1));
+    }
+
+    @Test
+    void testIsBalanced() {
+        var node3 = new TreeNode<>(3, null, null);
+        var node2 = new TreeNode<>(2, node3, null);
+        var node1 = new TreeNode<>(1, node2, null);
+        assertFalse(Trees.isBalanced(node1));
+    }
+
+    @Test
+    void testGetMaxHeight() {
+        assertEquals(0, Trees.getMaxHeight(null));
+        assertEquals(1, Trees.getMaxHeight(new TreeNode<>(2, null, null)));
+        assertEquals(3, Trees.getMaxHeight(TreeFactory.createNonBstTree()));
+        assertEquals(4, Trees.getMaxHeight(TreeFactory.createSampleBST4Levels()));
+
+        var node3 = new TreeNode<>(3, null, null);
+        var node2 = new TreeNode<>(2, node3, null);
+        var node1 = new TreeNode<>(1, node2, null);
+        assertEquals(3, Trees.getMaxHeight(node1));
+    }
 
 }
