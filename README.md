@@ -32,7 +32,7 @@ The goal of this project is to:
 - [✅] Convert sorted array to BST.
 
 ### 3. Heaps / Priority Queue
-- [ ] Implement Min-Heap (heapify up/down).
+- [✅] Implement Min-Heap (heapify up/down).
 - [ ] Implement Max-Heap.
 - [ ] Heap sort.
 - [ ] Convert array to heap (buildHeap).
