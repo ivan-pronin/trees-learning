@@ -41,7 +41,7 @@ The goal of this project is to:
 
 ### 4. General Binary Tree Problems
 - [✅] Maximum depth of binary tree.
-- [ ] Diameter of binary tree.
+- [✅] Diameter of binary tree.
 - [✅] Balanced binary tree check.
 - [ ] Path sum problems (hasPathSum, all path sums).
 - [ ] Invert / Mirror a binary tree.

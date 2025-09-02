@@ -90,4 +90,15 @@ public class TreeFactory {
         return root;
     }
 
+    /*
+     * Example tree:
+     * 1 -> 2 -> 3 -> 4
+     */
+    public static TreeNode<Integer> createLineTree() {
+        var node4 = new TreeNode<>(4);
+        var node3 = new TreeNode<>(3, null, node4);
+        var node2 = new TreeNode<>(2, null, node3);
+        return new TreeNode<>(1, null, node2);
+    }
+
 }
